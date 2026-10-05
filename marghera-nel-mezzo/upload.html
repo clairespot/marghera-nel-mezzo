@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="upload.docTitle">Aggiungi la tua opera · Marghera nel Mezzo</title>
+<meta name="description" content="Aggiungi una foto, un video, una canzone, un racconto o un disegno su Marghera. È gratis e aperto a tutti.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Marghera nel Mezzo">
+<meta property="og:title" content="Aggiungi la tua opera · Marghera nel Mezzo">
+<meta property="og:description" content="Aggiungi una foto, un video, una canzone, un racconto o un disegno su Marghera. È gratis e aperto a tutti.">
+<meta property="og:image" content="https://margheranelmezzo.com/IMAGES/web/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#141210">
+<link rel="icon" type="image/png" sizes="192x192" href="IMAGES/web/logo-192.png">
+<link rel="icon" type="image/svg+xml" href="IMAGES/web/logo.svg">
+<link rel="stylesheet" href="fonts/fonts.css?v=bfc27e6a">
+<link rel="stylesheet" href="style.css?v=a37e662d">
+</head>
+<body>
+<div class="page">
+<a class="skip" href="#main" data-i18n="common.skip">Vai al contenuto</a>
+<header class="site-header">
+  <div class="site-header__row">
+    <a class="brand" href="index.html" aria-label="Marghera nel Mezzo">
+      <img src="IMAGES/web/logo.svg" alt="" width="48" height="48">
+      <span class="brand__name">Marghera nel Mezzo</span>
+    </a>
+    <nav class="nav" aria-label="Menu principale" data-i18n-attr="aria-label:common.mainNav">
+      <a href="search.html" data-i18n="common.navGallery">Galleria</a>
+      <a href="progetto.html" data-i18n="common.navProject">Progetto</a>
+      <a href="ricerca.html" data-i18n="common.navResearch">Ricerca</a>
+      <a href="contatti.html" data-i18n="common.navContact">Contatti</a>
+    </nav>
+    <div class="lang-seg" role="group" aria-label="Lingua / Language">
+      <button type="button" data-lang="it" lang="it" aria-pressed="true">IT</button>
+      <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button type="button" class="lang-btn" lang="en" aria-label="Switch to English">EN</button>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-mobile" aria-label="Menu" data-i18n-attr="aria-label:common.menu">☰</button>
+    <a class="aa" href="testo-aggiungi.html" aria-label="Solo testo" title="Solo testo" data-i18n-attr="aria-label:common.textOnly;title:common.textOnly">Aa</a>
+  </div>
+  <nav id="menu-mobile" class="menu-mobile" hidden aria-label="Menu principale" data-i18n-attr="aria-label:common.mainNav">
+    <a href="search.html" data-i18n="common.navGallery">Galleria</a>
+    <a href="progetto.html" data-i18n="common.navProject">Progetto</a>
+    <a href="ricerca.html" data-i18n="common.navResearch">Ricerca</a>
+    <a href="contatti.html" data-i18n="common.navContact">Contatti</a>
+    <a class="menu-mobile__extra" href="upload.html" data-i18n="common.addTitle">Aggiungi la tua opera</a>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+<section class="band band--upload">
+  <div class="band__inner">
+    <h1 data-i18n="upload.h1">Aggiungi la tua opera</h1>
+    <p class="band__lede" data-i18n="upload.lede">Una foto, un video, una canzone, un racconto o un disegno su Marghera, di ieri o di oggi. È gratis e aperto a tutti.</p>
+    <ol class="steps" id="steps" aria-label="Passaggi" data-i18n-attr="aria-label:upload.stepsLabel">
+      <li aria-current="step"><span class="steps__mark">1</span><span data-i18n="upload.steps.0">Scegli il tipo</span></li>
+      <li><span class="steps__mark">2</span><span data-i18n="upload.steps.1">Raccontaci l’opera</span></li>
+      <li><span class="steps__mark">3</span><span data-i18n="upload.steps.2">Fatto</span></li>
+    </ol>
+  </div>
+</section>
+
+<div class="wrap up-main">
+  <div class="up-col">
+    <section id="step-type" aria-labelledby="type-q">
+      <h2 id="type-q" class="up-h2" data-i18n="upload.typeQ">Che cosa vuoi condividere?</h2>
+      <p class="up-hint" data-i18n="upload.typeHint">Scegli una voce. Potrai cambiarla dopo.</p>
+      <p class="up-alt-link"><span data-i18n="upload.altShort">Preferisci mandarla su WhatsApp o per email?</span> <a href="#alt-panel" data-i18n="upload.altLink">Ecco come</a></p>
+      <div class="type-grid">
+        <button type="button" class="type-card" data-type="Photo">
+          <span class="sym" aria-hidden="true"><svg width="40" height="34" viewBox="0 0 40 34" fill="none" aria-hidden="true" focusable="false"><rect x="10" y="2" width="12" height="7" rx="2" fill="currentColor"/><rect x="2" y="6" width="36" height="26" rx="5" fill="currentColor"/><circle cx="20" cy="19" r="8" fill="none" stroke-width="3" style="stroke:var(--lens,#fff)"/></svg></span>
+          <span class="type-card__txt">
+            <span class="type-card__label" data-i18n="upload.types.Photo.0">Foto</span>
+            <span class="type-card__hint" data-i18n="upload.types.Photo.1">Una o più fotografie</span>
+          </span>
+        </button>
+        <button type="button" class="type-card" data-type="Video">
+          <span class="sym" aria-hidden="true">▶</span>
+          <span class="type-card__txt">
+            <span class="type-card__label" data-i18n="upload.types.Video.0">Video</span>
+            <span class="type-card__hint" data-i18n="upload.types.Video.1">Un file o un link YouTube</span>
+          </span>
+        </button>
+        <button type="button" class="type-card" data-type="Audio">
+          <span class="sym" aria-hidden="true">♪</span>
+          <span class="type-card__txt">
+            <span class="type-card__label" data-i18n="upload.types.Audio.0">Musica o audio</span>
+            <span class="type-card__hint" data-i18n="upload.types.Audio.1">Un file o un link Spotify</span>
+          </span>
+        </button>
+        <button type="button" class="type-card" data-type="Text">
+          <span class="sym" aria-hidden="true">¶</span>
+          <span class="type-card__txt">
+            <span class="type-card__label" data-i18n="upload.types.Text.0">Testo</span>
+            <span class="type-card__hint" data-i18n="upload.types.Text.1">Racconto, poesia, ricordo</span>
+          </span>
+        </button>
+        <button type="button" class="type-card" data-type="Illustration">
+          <span class="sym" aria-hidden="true">✎</span>
+          <span class="type-card__txt">
+            <span class="type-card__label" data-i18n="upload.types.Illustration.0">Disegno</span>
+            <span class="type-card__hint" data-i18n="upload.types.Illustration.1">Disegni, dipinti, grafiche</span>
+          </span>
+        </button>
+        <button type="button" class="type-card" data-type="Other">
+          <span class="sym" aria-hidden="true">+</span>
+          <span class="type-card__txt">
+            <span class="type-card__label" data-i18n="upload.types.Other.0">Altro</span>
+            <span class="type-card__hint" data-i18n="upload.types.Other.1">Qualcosa di diverso</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section id="step-form" hidden aria-label="Raccontaci l’opera" data-i18n-attr="aria-label:upload.steps.1">
+      <div class="chosen">
+        <span class="chosen__chip" id="chosen"></span>
+        <button type="button" class="linkbtn" id="change" data-i18n="upload.change">Cambia</button>
+      </div>
+      <p class="up-note" id="video-note" hidden data-i18n="upload.videoNote">Il modulo accetta file fino a 10 MB: per i video incolla un link (YouTube, Google Drive…) oppure mandalo su WhatsApp.</p>
+      <div class="tally-wrap" id="tally"></div>
+    </section>
+
+    <section id="step-sent" hidden tabindex="-1" aria-labelledby="sent-title">
+      <div class="sent">
+        <span class="sent__tick" aria-hidden="true">✓</span>
+        <h2 id="sent-title" data-i18n="upload.thanksTitle">Grazie! Abbiamo ricevuto la tua opera.</h2>
+        <p data-i18n="upload.thanksBody">La guardiamo entro una settimana. Se abbiamo domande ti scriviamo, poi la pubblichiamo nella galleria.</p>
+        <div class="sent__btns">
+          <button type="button" class="pill pill--ink" id="again">+ <span data-i18n="upload.again">Aggiungi un’altra opera</span></button>
+          <a class="pill" href="search.html"><span data-i18n="upload.toGallery">Torna alla galleria</span> →</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <aside class="up-aside">
+    <div class="panel panel--ink" id="alt-panel" tabindex="-1">
+      <h2 data-i18n="upload.altTitle">Preferisci mandarla in un altro modo?</h2>
+      <p data-i18n="upload.altBody">Mandaci l’opera su WhatsApp o per email, con il tuo nome e l’anno. Al resto pensiamo noi.</p>
+      <a href="https://wa.me/447599882486" target="_blank" rel="noopener">WhatsApp · +44 7599 882486</a>
+      <a href="mailto:margheranelmezzo@gmail.com">margheranelmezzo@gmail.com</a>
+    </div>
+    <div class="panel">
+      <h2 data-i18n="upload.nextTitle">Cosa succede dopo</h2>
+      <ol class="next-list">
+        <li><span class="next-list__n" aria-hidden="true">1</span><span data-i18n="upload.next.0">Ti scriviamo per confermare che l’abbiamo ricevuta.</span></li>
+        <li><span class="next-list__n" aria-hidden="true">2</span><span data-i18n="upload.next.1">Guardiamo l’opera entro una settimana.</span></li>
+        <li><span class="next-list__n" aria-hidden="true">3</span><span data-i18n="upload.next.2">La pubblichiamo nella galleria con il nome che hai scelto.</span></li>
+      </ol>
+    </div>
+    <div class="panel">
+      <h2 data-i18n="upload.privTitle">La tua privacy, in breve</h2>
+      <ul class="priv-list">
+        <li data-i18n="upload.priv.0">Email e telefono servono solo a noi per contattarti.</li>
+        <li data-i18n="upload.priv.1">Pubblichiamo l’opera con titolo, anno, descrizione, luogo, il tuo legame con Marghera e il nome che scegli.</li>
+        <li data-i18n="upload.priv.2">Puoi chiederci di toglierla quando vuoi.</li>
+      </ul>
+      <a class="link-arrow" href="privacy.html"><span data-i18n="upload.privLink">Leggi l’informativa completa</span> →</a>
+    </div>
+  </aside>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <nav aria-label="Link utili" data-i18n-attr="aria-label:common.footerNav">
+      <a href="progetto.html" data-i18n="common.navProject">Progetto</a>
+      <a href="ricerca.html" data-i18n="common.navResearch">Ricerca</a>
+      <a href="ringraziamenti.html" data-i18n="common.thanks">Ringraziamenti</a>
+      <a href="contatti.html" data-i18n="common.navContact">Contatti</a>
+      <a href="privacy.html" data-i18n="common.privacy">Privacy</a>
+      <a href="https://instagram.com/margheranelmezzo" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://facebook.com/margheranelmezzo" target="_blank" rel="noopener">Facebook</a>
+    </nav>
+    <span class="site-footer__place">Marghera nel Mezzo · Venezia</span>
+  </div>
+</footer>
+</div>
+<script src="archive.js" defer></script>
+<script src="js/strings.js?v=6b7e5ebd" defer></script>
+<script src="js/site.js?v=d8f369be" defer></script>
+<script src="js/upload.js?v=8bc78583" defer></script>
+
+</body>
+</html>
